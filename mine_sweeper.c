@@ -58,8 +58,8 @@ void ShowMap() {
 
 void GenerateMine() {
   for (int i = 0; i < MINE_COUNT;) {
-    int pos_x = rand() % 9;
-    int pos_y = rand() % 9;
+    int pos_x = rand() % MAP_SIZE;
+    int pos_y = rand() % MAP_SIZE;
     if (!map[pos_x][pos_y].is_mine) {
       map[pos_x][pos_y].is_mine = true;
       i++;
